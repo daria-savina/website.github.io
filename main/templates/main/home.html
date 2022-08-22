@@ -1,0 +1,81 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Main Page
+{% endblock%}
+
+{% block content %}
+<html>
+<head>
+	<style>
+.cnt {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  background-color:black;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.cnt:hover .image {
+  opacity: 0.3;
+}
+
+.cnt:hover .middle {
+  opacity: 1;
+}
+.cnt .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #D3D3D3;
+  color: black;
+  font-size: 17px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.7;
+}
+.cnt .button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+	</style>
+</head>
+<body>
+<div class="cnt">
+	<img src="https://www.mamartino.com/projects/150yearsofNature/img/i4.jpg" class="image" >
+	<div class="middle">
+		{% load static %}
+	<a class="button" href="{% static 'main/img/dog.jpg' %}" >Follow Me!</a>
+	</div>
+	</div>
+</body>
+</head>
+</html>
+{% endblock%}
+
+
+
+
+

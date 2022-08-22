@@ -1,0 +1,61 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+About
+{% endblock%}
+
+{% block content %}
+<html>
+<head>
+	<style>
+
+body {
+        background-image: url("https://c.pxhere.com/photos/25/5f/the_night_sky_starry_sky_star-1078799.jpg!d");
+}
+
+.about-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding:1px;
+  color: #EEE8AA;
+  background-color:black;
+  opacity: 0.8;
+  font-size:17px
+}
+.title {
+  color: #FFFACD;
+  font-size:30px;
+}
+
+.card {
+  border-width: 5px 5px 5px 5px;
+  border-style:solid;
+  border-color:#BDB76B;
+  border-radius: 10px;
+  color: #2F4F4F;
+  background-color: #F0E68C;
+}
+
+</style>
+</head>
+<body>
+
+<div class="about-text">
+	<div class="title">
+		<h1>A little <br>about me!</h1></div>
+	<p><strong>I am a Software Engineer,</strong> working full time and studying programming in between!</p>
+	<p>I enjoy traveling (especially adore mountains), ride a car and change time to time my homeplace. Besides, I love programming.I worked as a Data Analyst, BI Developer, Data Engineer. And right now developing myself <strong>in Big Data with focus on  Machine Learning.:</strong> </p>
+	<p>I'm not familiar with drawing, art is not for me. But I get the beauty from the numbers.I enjoy working with them. And I learned how to express the beauty from my mind with AI, numbers and visualizations on dashboards.</p>
+
+	<div class="card">
+					<br> "Do not try to write perfect code; write code that works, and then decide whether to improve your code for that project or move on to something new. Try to keep this philosophy of simplicity and clarity in mind"
+					<p> - Some guy <cite> from Reddit </cite> </p></br>
+	</div>
+</div>
+</body>
+{% endblock%}
+
+

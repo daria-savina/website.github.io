@@ -1,0 +1,16 @@
+body {
+       background-color: black;
+       color: white;
+
+}
+.container {
+        background-color: black;
+        color: white;
+        font-size: 20px;
+    }
+
+.header{
+       display: flex;
+       justify-content: center;
+
+    }

@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}" >
+</head>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <ul class="navbar">
+            <a href="{% url 'home' %}" class="site-links">Home</a>
+            <a href="{% url 'about' %}" class="site-links">About Me</a>
+            <a href="{% url 'project' %}" class="site-links">Projects</a>
+            <a href="https://github.com/daria-savina" target="_blank" class="site-links">GitHub</a>
+            <a href="https://medium.com/@savinadaria" target="_blank" class="site-links">Medium</a>
+            <a href="https://www.linkedin.com/in/daria-savina/" target="_blank" class="site-links">LinkedIn</a>
+        </ul>
+    </div>
+</div>
+
+    <main class="textClass">
+    {% block content %}{% endblock %}
+    </main>
+
+</body>
+
+</html>
+
+
